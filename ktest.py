@@ -33,9 +33,9 @@ clientSettings = client.getSettings()
 #==============================================================================================================
 clientPoll = OEPoll(client)
 #==============================================================================================================
-admin = "u93d1ee4847fa27817ec1ee5d96d8616f"
-owner = "u93d1ee4847fa27817ec1ee5d96d8616f"
-Bots=[mid,"u93d1ee4847fa27817ec1ee5d96d8616f"]
+admin = "u0237b0ec326fc36a91743df4a1ad2591"
+owner = "u0237b0ec326fc36a91743df4a1ad2591"
+Bots=[mid,"u0237b0ec326fc36a91743df4a1ad2591"]
 #==============================================================================================================
 #==============================================================================================================
 contact = client.getProfile()
@@ -208,7 +208,7 @@ def command(text):
         cmd = "Undefined command"
     return cmd
 #==============================================================================================================
-helpmsg ="""YUKIE STREET BOTS
+helpmsg ="""
 
 Me
 Mymid
@@ -599,7 +599,7 @@ def lineBot(op):
                                if cmd == "open":
                                     temp_flood[receiver]["expire"] = False
                                     temp_flood[receiver]["time"] = time.time()
-                                    client.sendMessage(to,"Bot Actived")
+                                    client.sendMessage(to,"bot kembali aktive")
                                return
                             elif time.time() - temp_flood[receiver]["time"] <= 5:
                                 temp_flood[receiver]["flood"] += 1
@@ -608,7 +608,7 @@ def lineBot(op):
                                     temp_flood[receiver]["expire"] = True
                                     ret_ = "I will be off for 30 seconds, type open to re-enable"
                                     userid = "https://line.me/ti/p/~" + client.profile.userid
-                                    client.sendFooter(to, "Flood Detect !\n"+str(ret_), str(userid), "http://dl.profile.line-cdn.net/"+client.getContact(clientMID).pictureStatus, client.getContact(clientMID).displayName)
+                                    client.sendFooter(to, " Detect !\n"+str(ret_), str(userid), "http://dl.profile.line-cdn.net/"+client.getContact(clientMID).pictureStatus, client.getContact(clientMID).displayName)
                             else:
                                  temp_flood[receiver]["flood"] = 0
                             temp_flood[receiver]["time"] = time.time()
