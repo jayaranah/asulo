@@ -3113,7 +3113,7 @@ def lineBot(op):
                             else:
                                 client.sendMessage(receiver, "Auto checking sider set to off")
 #==============================================================================================================
-                        elif cmd == "status":
+                        elif cmd == "beraklah":
                             md = "STATUS BOTS\n\n"
                             if settings["autoRead"] == True: md+="Autoread 「On」\n"
                             else: md+="Autoread 「Off」\n"
@@ -4239,8 +4239,8 @@ def lineBot(op):
                         elif cmd == " about" or cmd == "about":
                             try:
                                 arr = []
-                                owner = "ufc6d985e53fcf4ae5436354406ce408c"
-                                khietag = "ufc6d985e53fcf4ae5436354406ce408c"                        
+                                owner = "ube187443474747c3ec352e7efeb48c1b"
+                                khietag = "ube187443474747c3ec352e7efeb48c1b"                        
              #                   creator = client.getContact(owner)
                                 contact = client.getContact(clientMID)
                                 grouplist = client.getGroupIdsJoined()
